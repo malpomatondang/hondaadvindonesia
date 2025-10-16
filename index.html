@@ -4,17 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Komunitas Motor ADV Indonesia</title>
-  <!-- Tailwind Play CDN for quick prototype -->
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* small visual tweaks */
     .brand { color: #FF4500 }
     .card-shadow { box-shadow: 0 6px 18px rgba(30,30,30,0.08); }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans">
 
-  <!-- NAVBAR -->
   <header class="bg-white border-b">
     <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
       <a href="index.html" class="flex items-center gap-3">
@@ -26,26 +23,25 @@
       </a>
 
       <nav class="hidden md:flex items-center gap-6">
-        <a href="index.html" class="text-sm hover:underline">Beranda</a>
+        <a href="index.html" class="text-sm px-3 py-2 rounded-md border border-transparent bg-orange-500 text-white shadow-sm">Beranda</a>
         <a href="event.html" class="text-sm hover:underline">Event</a>
         <a href="galeri.html" class="text-sm hover:underline">Galeri</a>
-        <a href="about.html" class="text-sm hover:underline">About</a>
-        <a href="login.html" class="text-sm px-3 py-2 rounded-md border border-transparent bg-orange-500 text-white shadow-sm">Login</a>
+        <a href="about.html" class="text-sm hover:underline">Tentang Kami</a>
+        <a href="login.html" class="text-sm px-3 py-2 rounded-md border border-orange-500 text-orange-400 hover:bg-orange-500 hover:text-white transition shadow-sm">Login</a>
       </nav>
 
       <button class="md:hidden p-2 rounded-md bg-gray-100">☰</button>
     </div>
   </header>
 
-  <!-- HERO -->
   <section id="home" class="bg-[url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1400&q=60')] bg-cover bg-center">
     <div class="backdrop-brightness-50 bg-black/40">
       <div class="max-w-6xl mx-auto px-4 py-24 text-white">
         <h2 class="text-4xl md:text-5xl font-extrabold">Satu Aspal, Satu Semangat</h2>
         <p class="mt-4 text-lg text-gray-200 max-w-2xl">Bergabunglah dengan komunitas kami — acara, touring, dan solidaritas untuk pecinta motor.</p>
         <div class="mt-6 flex gap-3">
-          <a href="#" class="inline-block px-5 py-3 rounded-lg bg-orange-500 text-white font-semibold">Gabung Sekarang</a>
-          <a href="#events" class="inline-block px-5 py-3 rounded-lg bg-white/20 text-white border border-white/30">Lihat Event</a>
+          <a href="daftar.html" target="_blank" class="inline-block px-5 py-3 rounded-lg bg-orange-500 text-white font-semibold">Gabung Sekarang</a>
+          <a href="event.html" class="inline-block px-5 py-3 rounded-lg bg-white/20 text-white border border-white/30">Lihat Event</a>
         </div>
       </div>
     </div>
@@ -53,7 +49,6 @@
 
   <main class="max-w-6xl mx-auto px-4 py-10">
 
-    <!-- EVENT GRID -->
     <section id="events" class="mb-12">
       <div class="flex items-center justify-between mb-6">
         <h3 class="text-2xl font-semibold">Event Mendatang</h3>
@@ -61,7 +56,6 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- event card -->
         <article class="bg-white rounded-lg overflow-hidden card-shadow">
           <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=60" class="w-full h-40 object-cover" />
           <div class="p-4">
@@ -74,7 +68,7 @@
             </div>
           </div>
         </article>
-        <!-- duplicate cards for demo -->
+
         <article class="bg-white rounded-lg overflow-hidden card-shadow">
           <img src="https://images.unsplash.com/photo-1520975911959-7d18f0a8f7c9?auto=format&fit=crop&w=1200&q=60" class="w-full h-40 object-cover" />
           <div class="p-4">
@@ -87,6 +81,7 @@
             </div>
           </div>
         </article>
+
         <article class="bg-white rounded-lg overflow-hidden card-shadow">
           <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=60" class="w-full h-40 object-cover" />
           <div class="p-4">
@@ -102,148 +97,78 @@
       </div>
     </section>
 
-    <!-- TWO-COLUMN LAYOUT: MEMBER DASHBOARD PREVIEW + GALLERY -->
-    <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-      <!-- MEMBER DASHBOARD PREVIEW -->
-      <div class="lg:col-span-2 bg-white rounded-lg p-6 card-shadow">
-        <div class="flex items-center justify-between">
-          <h4 class="text-xl font-semibold">Dashboard Saya (Preview)</h4>
-          <a href="#" class="text-sm text-gray-500">Kelola Profil</a>
-        </div>
-
-        <div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div class="p-4 bg-gray-50 rounded-lg">
-            <div class="text-sm text-gray-500">Total Motor</div>
-            <div class="text-2xl font-bold mt-2">2</div>
-          </div>
-          <div class="p-4 bg-gray-50 rounded-lg">
-            <div class="text-sm text-gray-500">Event Diikuti</div>
-            <div class="text-2xl font-bold mt-2">5</div>
-          </div>
-          <div class="p-4 bg-gray-50 rounded-lg">
-            <div class="text-sm text-gray-500">Iuran Lunas</div>
-            <div class="text-2xl font-bold mt-2">6</div>
-          </div>
-        </div>
-
-        <div class="mt-6">
-          <h5 class="font-semibold">Motor Saya</h5>
-          <div class="mt-3 overflow-x-auto">
-            <table class="min-w-full text-left text-sm">
-              <thead class="text-gray-500">
-                <tr>
-                  <th class="py-2">Foto</th>
-                  <th class="py-2">Merek</th>
-                  <th class="py-2">Tipe</th>
-                  <th class="py-2">Tahun</th>
-                  <th class="py-2">Plat</th>
-                  <th class="py-2">Aksi</th>
-                </tr>
-              </thead>
-              <tbody class="text-gray-700">
-                <tr class="border-t">
-                  <td class="py-3"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=400&q=60" class="w-16 h-10 object-cover rounded"/></td>
-                  <td class="py-3">Yamaha</td>
-                  <td class="py-3">NMAX</td>
-                  <td class="py-3">2020</td>
-                  <td class="py-3">BK 1234 XY</td>
-                  <td class="py-3"><button class="text-sm px-3 py-1 rounded bg-gray-100">Edit</button></td>
-                </tr>
-                <tr class="border-t">
-                  <td class="py-3"><img src="https://images.unsplash.com/photo-1520975911959-7d18f0a8f7c9?auto=format&fit=crop&w=400&q=60" class="w-16 h-10 object-cover rounded"/></td>
-                  <td class="py-3">Honda</td>
-                  <td class="py-3">CBR150</td>
-                  <td class="py-3">2018</td>
-                  <td class="py-3">BK 5678 AB</td>
-                  <td class="py-3"><button class="text-sm px-3 py-1 rounded bg-gray-100">Edit</button></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
+    <section id="past-events" class="mb-12">
+      <div class="flex items-center justify-between mb-6">
+        <h3 class="text-2xl font-semibold">Event yang Sudah Dilaksanakan</h3>
+        <a href="#" class="text-sm text-gray-500">Lihat Arsip</a>
       </div>
 
-      <!-- GALLERY -->
-      <aside class="bg-white rounded-lg p-4 card-shadow">
-        <h5 class="font-semibold">Galeri</h5>
-        <div class="mt-3 grid grid-cols-3 gap-2">
-          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=60" class="w-full h-20 object-cover rounded" />
-          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=400&q=60" class="w-full h-20 object-cover rounded" />
-          <img src="https://images.unsplash.com/photo-1520975911959-7d18f0a8f7c9?auto=format&fit=crop&w=400&q=60" class="w-full h-20 object-cover rounded" />
-        </div>
-      </aside>
-    </section>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article class="bg-white rounded-lg overflow-hidden card-shadow relative">
+          <img src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=1200&q=60" class="w-full h-40 object-cover opacity-80" />
+          <div class="absolute top-3 left-3 bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded">✔ Selesai</div>
+          <div class="p-4">
+            <h4 class="font-semibold">Fun Ride Sumatera</h4>
+            <p class="text-xs text-gray-500 mt-1">15 Sep 2025 • Bukittinggi</p>
+            <p class="mt-3 text-sm text-gray-600">Touring pegunungan penuh keakraban antar chapter Sumatera.</p>
+          </div>
+        </article>
 
-    <!-- ADMIN DASHBOARD PREVIEW -->
-    <section class="mt-8">
-      <div class="bg-white rounded-lg p-6 card-shadow">
-        <div class="flex items-center justify-between">
-          <h4 class="text-xl font-semibold">Admin Dashboard (Preview)</h4>
-          <a href="#" class="text-sm text-gray-500">Masuk ke Admin</a>
-        </div>
+        <article class="bg-white rounded-lg overflow-hidden card-shadow relative">
+          <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&w=1200&q=60" class="w-full h-40 object-cover opacity-80" />
+          <div class="absolute top-3 left-3 bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded">✔ Selesai</div>
+          <div class="p-4">
+            <h4 class="font-semibold">Anniversary Chapter Riau</h4>
+            <p class="text-xs text-gray-500 mt-1">22 Agu 2025 • Pekanbaru</p>
+            <p class="mt-3 text-sm text-gray-600">Perayaan ulang tahun ke-5 komunitas dengan berbagai lomba dan hiburan.</p>
+          </div>
+        </article>
 
-        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div class="p-4 bg-gray-50 rounded-lg">
-            <div class="text-sm text-gray-500">Total Anggota</div>
-            <div class="text-2xl font-bold mt-2">1.234</div>
+        <article class="bg-white rounded-lg overflow-hidden card-shadow relative">
+          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=1200&q=60" class="w-full h-40 object-cover opacity-80" />
+          <div class="absolute top-3 left-3 bg-green-100 text-green-700 text-xs font-semibold px-2 py-1 rounded">✔ Selesai</div>
+          <div class="p-4">
+            <h4 class="font-semibold">Pelatihan Safety Riding</h4>
+            <p class="text-xs text-gray-500 mt-1">30 Jul 2025 • Jakarta</p>
+            <p class="mt-3 text-sm text-gray-600">Meningkatkan kesadaran dan keterampilan berkendara aman di jalan raya.</p>
           </div>
-          <div class="p-4 bg-gray-50 rounded-lg">
-            <div class="text-sm text-gray-500">Total Motor</div>
-            <div class="text-2xl font-bold mt-2">1.567</div>
-          </div>
-          <div class="p-4 bg-gray-50 rounded-lg">
-            <div class="text-sm text-gray-500">Event Aktif</div>
-            <div class="text-2xl font-bold mt-2">8</div>
-          </div>
-          <div class="p-4 bg-gray-50 rounded-lg">
-            <div class="text-sm text-gray-500">Iuran Bulan Ini</div>
-            <div class="text-2xl font-bold mt-2">Rp 12.000.000</div>
-          </div>
-        </div>
-
-        <div class="mt-6">
-          <h5 class="font-semibold">Anggota Terbaru</h5>
-          <div class="mt-3 overflow-x-auto">
-            <table class="min-w-full text-left text-sm">
-              <thead class="text-gray-500">
-                <tr>
-                  <th class="py-2">Nama</th>
-                  <th class="py-2">No HP</th>
-                  <th class="py-2">Status</th>
-                  <th class="py-2">Aksi</th>
-                </tr>
-              </thead>
-              <tbody class="text-gray-700">
-                <tr class="border-t">
-                  <td class="py-3">Adi Santoso</td>
-                  <td class="py-3">0812-3456-7890</td>
-                  <td class="py-3"><span class="px-2 py-1 rounded bg-green-100 text-green-700 text-xs">Terverifikasi</span></td>
-                  <td class="py-3"><button class="text-sm px-3 py-1 rounded bg-gray-100">Lihat</button></td>
-                </tr>
-                <tr class="border-t">
-                  <td class="py-3">Rina Marlina</td>
-                  <td class="py-3">0813-2222-3333</td>
-                  <td class="py-3"><span class="px-2 py-1 rounded bg-yellow-100 text-yellow-700 text-xs">Menunggu Verif</span></td>
-                  <td class="py-3"><button class="text-sm px-3 py-1 rounded bg-gray-100">Verifikasi</button></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
+        </article>
       </div>
     </section>
+
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="bg-white border-t mt-12">
-    <div class="max-w-6xl mx-auto px-4 py-6 text-sm text-gray-600 flex flex-col md:flex-row justify-between">
-      <div>© 2025 Komunitas Motor. All rights reserved.</div>
-      <div class="mt-3 md:mt-0">Sekretariat • Jl. Contoh No.1 • <span class="text-orange-500">contact@komunitasmotor.id</span></div>
+  <footer class="bg-white-900 border-t text-gray-400 text-sm py-8 px-5 mt-10">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+
+    <div class="text-center md:text-left">
+      <h3 class="text-gray-500 font-semibold text-lg mb-1">Komunitas Motor ADV Indonesia</h3>
+      <p class="text-gray-500">© 2025 Semua Hak Dilindungi</p>
     </div>
-  </footer>
+
+    <div class="flex items-center justify-center gap-4">
+      <a href="https://youtube.com" target="_blank" class="p-2 rounded-full bg-gray-800 hover:bg-orange-500 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M10 15l5.19-3L10 9v6zm12-3c0-2.21-.18-3.49-.41-4.31-.22-.79-.87-1.43-1.66-1.66C18.1 6.79 12 6.79 12 6.79s-6.1 0-7.93.24c-.79.22-1.44.87-1.66 1.66C2.18 8.51 2 9.79 2 12s.18 3.49.41 4.31c.22.79.87 1.44 1.66 1.66C5.9 18.21 12 18.21 12 18.21s6.1 0 7.93-.24c.79-.22 1.44-.87 1.66-1.66.23-.82.41-2.1.41-4.31z"/>
+        </svg>
+      </a>
+
+      <a href="https://instagram.com" target="_blank" class="p-2 rounded-full bg-gray-800 hover:bg-orange-500 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M7 2C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 4a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-3a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z"/>
+        </svg>
+      </a>
+
+      <a href="https://x.com" target="_blank" class="p-2 rounded-full bg-gray-800 hover:bg-orange-500 transition">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M18.244 2h3.308l-7.227 8.26L22 22h-6.412l-5.02-6.547L4.773 22H1.464l7.73-8.84L2 2h6.59l4.517 6.02L18.244 2Zm-1.154 18h1.833L7.014 4h-1.9L17.09 20Z"/>
+  </svg>
+</a>
+    </div>
+  </div>
+</footer>
+
 
 </body>
 </html>
