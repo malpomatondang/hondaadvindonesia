@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lupa Kata Sandi | Komunitas Motor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-gray-100 font-inter min-h-screen flex items-center justify-center">
+
+  <!-- Container -->
+  <div class="w-full max-w-sm bg-gray-900 rounded-2xl shadow-lg p-6 mx-3">
+    
+    <!-- Header -->
+    <div class="text-center mb-6">
+      <div class="flex justify-center mb-3">
+        <div class="bg-orange-500 p-3 rounded-full">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.656 0 3 1.344 3 3v5H9v-5c0-1.656 1.344-3 3-3zm0-7a3 3 0 013 3v1H9V7a3 3 0 013-3z"/>
+          </svg>
+        </div>
+      </div>
+      <h1 class="text-xl font-bold text-orange-400">Lupa Kata Sandi?</h1>
+      <p class="text-sm text-gray-400 mt-1">Masukkan email akunmu untuk mengatur ulang sandi</p>
+    </div>
+
+    <!-- Form -->
+    <form class="space-y-4">
+      <div>
+        <label class="block text-sm mb-1">Email Terdaftar</label>
+        <div class="flex items-center bg-gray-800 rounded-lg px-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18"/>
+          </svg>
+          <input type="email" class="w-full bg-transparent border-none focus:ring-0 focus:outline-none p-3 text-sm" placeholder="email@contoh.com" required>
+        </div>
+      </div>
+
+      <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 py-3 rounded-lg font-semibold text-white transition duration-300">
+        Kirim Tautan Reset
+      </button>
+    </form>
+
+    <p class="text-center text-sm text-gray-400 mt-6">
+      Sudah ingat sandimu?
+      <a href="login.html" class="text-orange-400 hover:underline">Kembali ke login</a>
+    </p>
+  </div>
+
+</body>
+</html>

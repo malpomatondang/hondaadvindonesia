@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profil Anggota — Komunitas Motor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .brand { color: #FF4500 }
+    .card-shadow { box-shadow: 0 6px 18px rgba(30,30,30,0.08); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- NAVBAR -->
+  <header class="bg-white border-b">
+    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <a href="home.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-gray-900 flex items-center justify-center text-white">🏍️</div>
+        <div>
+          <h1 class="text-lg font-semibold">Komunitas Motor</h1>
+          <p class="text-xs text-gray-500">Satu Aspal, Satu Semangat</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6">
+        <a href="home.html" class="text-sm hover:underline">Beranda</a>
+        <a href="event.html" class="text-sm hover:underline">Event</a>
+        <a href="galeri.html" class="text-sm hover:underline">Galeri</a>
+        <a href="profil.html" class="text-sm px-3 py-2 rounded-md border border-transparent bg-orange-500 text-white shadow-sm">Profil</a>
+      </nav>
+
+      <button class="md:hidden p-2 rounded-md bg-gray-100">☰</button>
+    </div>
+  </header>
+
+  <!-- PROFIL HEADER -->
+  <section class="bg-white border-b">
+    <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col items-center text-center">
+      <img src="https://i.pravatar.cc/150?img=13" alt="Foto Profil" class="w-28 h-28 rounded-full border-4 border-orange-500 shadow-md">
+      <h2 class="text-2xl font-semibold mt-4">Rizky Pratama</h2>
+      <p class="text-sm text-gray-500">Anggota sejak Januari 2023</p>
+      <button class="mt-4 px-4 py-2 bg-orange-500 text-white text-sm rounded-lg hover:bg-orange-600 transition">Edit Profil</button>
+    </div>
+  </section>
+
+  <!-- KONTEN PROFIL -->
+  <main class="max-w-6xl mx-auto px-4 py-10 space-y-10">
+
+    <!-- INFORMASI PRIBADI -->
+    <section class="bg-white rounded-lg p-6 card-shadow">
+      <h3 class="text-xl font-semibold mb-4 text-gray-700">Informasi Pribadi</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+        <div>
+          <p class="text-gray-500">Email</p>
+          <p class="font-medium">rizky@contoh.com</p>
+        </div>
+        <div>
+          <p class="text-gray-500">Nomor Telepon</p>
+          <p class="font-medium">0812-3456-7890</p>
+        </div>
+        <div>
+          <p class="text-gray-500">Domisili</p>
+          <p class="font-medium">Pekanbaru</p>
+        </div>
+        <div>
+          <p class="text-gray-500">Status Keanggotaan</p>
+          <span class="px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700">Aktif</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOTOR SAYA -->
+    <section class="bg-white rounded-lg p-6 card-shadow">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-xl font-semibold text-gray-700">Motor Saya</h3>
+        <button class="text-sm bg-orange-500 text-white px-3 py-1 rounded hover:bg-orange-600">+ Tambah Motor</button>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="min-w-full text-left text-sm">
+          <thead class="text-gray-500 border-b">
+            <tr>
+              <th class="py-2">Foto</th>
+              <th class="py-2">Merek</th>
+              <th class="py-2">Tipe</th>
+              <th class="py-2">Tahun</th>
+              <th class="py-2">Plat</th>
+              <th class="py-2 text-center">Aksi</th>
+            </tr>
+          </thead>
+          <tbody class="text-gray-700">
+            <tr class="border-b">
+              <td class="py-3"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=400&q=60" class="w-16 h-10 object-cover rounded"></td>
+              <td class="py-3">Yamaha</td>
+              <td class="py-3">NMAX 155</td>
+              <td class="py-3">2020</td>
+              <td class="py-3">BM 1234 XY</td>
+              <td class="py-3 text-center"><button class="text-xs bg-gray-100 px-3 py-1 rounded">Edit</button></td>
+            </tr>
+            <tr>
+              <td class="py-3"><img src="https://images.unsplash.com/photo-1520975911959-7d18f0a8f7c9?auto=format&fit=crop&w=400&q=60" class="w-16 h-10 object-cover rounded"></td>
+              <td class="py-3">Honda</td>
+              <td class="py-3">CBR150R</td>
+              <td class="py-3">2019</td>
+              <td class="py-3">BM 9876 AB</td>
+              <td class="py-3 text-center"><button class="text-xs bg-gray-100 px-3 py-1 rounded">Edit</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- EVENT YANG DIIKUTI -->
+    <section class="bg-white rounded-lg p-6 card-shadow">
+      <h3 class="text-xl font-semibold mb-4 text-gray-700">Event yang Diikuti</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="p-4 border rounded-lg bg-gray-50">
+          <h4 class="font-semibold">Touring Sumatera</h4>
+          <p class="text-xs text-gray-500 mt-1">15 Sept 2025 • Padang</p>
+          <p class="text-sm mt-2 text-gray-600">Menjelajahi pantai barat bersama komunitas motor.</p>
+        </div>
+        <div class="p-4 border rounded-lg bg-gray-50">
+          <h4 class="font-semibold">Baksos Ramadhan</h4>
+          <p class="text-xs text-gray-500 mt-1">1 Apr 2025 • Pekanbaru</p>
+          <p class="text-sm mt-2 text-gray-600">Donasi dan buka puasa bersama anak yatim.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t mt-12">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-sm text-gray-600 flex flex-col md:flex-row justify-between">
+      <div>© 2025 Komunitas Motor. All rights reserved.</div>
+      <div class="mt-3 md:mt-0">Sekretariat • Jl. Contoh No.1 • <span class="text-orange-500">contact@komunitasmotor.id</span></div>
+    </div>
+  </footer>
+
+</body>
+</html>
